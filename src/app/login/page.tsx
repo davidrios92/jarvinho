@@ -11,7 +11,7 @@ import { LoginForm } from "./login-form";
 export const metadata = { title: "Entrar · Jarvinho" };
 
 const ERRORS: Record<string, string> = {
-  link: "El link venció o ya se usó. Pedí un código nuevo.",
+  link: "No se pudo entrar con el link: vence, se usa una sola vez y solo sirve en el mismo navegador donde lo pediste (en el iPhone, el link abre Safari y no la app). Pedí un código nuevo y escribilo acá.",
 };
 
 async function LoginWithParams({ searchParams }: PageProps<"/login">) {
